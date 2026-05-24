@@ -1,0 +1,204 @@
+<div class="portfolio-container">
+
+    <!-- HEADER -->
+    <header class="top-header">
+        <div class="logo-section">
+            <span class="line"></span>
+            <h2>SANTHOSH KUMAR</h2>
+        </div>
+
+
+        <!-- <div class="contact-info">
+            <div class="contact-item">
+                <img src="../../assets/gmail (1) 1.png" /> santhoshmvp333@gmail.com
+            </div>
+
+            <div class="contact-item">
+                <img src="../../assets/phone-call 2.png" /> 7373094563
+            </div>
+        </div> -->
+        <div class="contact-info">
+
+            <!-- EMAIL -->
+            <a href="mailto:santhoshmvp333@gmail.com" class="contact-item" style="text-decoration: none;">
+                <img src="assets/gmail (1) 1.png" alt="gmail" />
+                <span>santhoshmvp333@gmail.com</span>
+            </a>
+
+            <!-- PHONE -->
+            <a href="tel:7373094563" class="contact-item" style="text-decoration: none;">
+                <img src="assets/phone-call 2.png" alt="phone" />
+                <span>7373094563</span>
+            </a>
+
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+
+        <p class="intro-text">
+            Hello I'm Santhosh Kumar - Mean & Mern stack developer with 3 years of experience
+        </p>
+
+        <div class="hero-content">
+
+            <!-- LEFT IMAGE -->
+            <div class="hero-image-card">
+                <img src="../../assets/pro-img.svg" />
+            </div>
+
+            <!-- RIGHT CONTENT -->
+            <div class="hero-right">
+
+                <h1>
+                    I specialize in building scalable and high-performance
+                    full-stack web applications
+                </h1>
+
+                <p class="hero-description">
+                    Driven by a passion for technology and innovation, I strive to build scalable full-stack
+                    applications that deliver seamless user experiences and make a meaningful impact in the digital
+                    world.
+                </p>
+
+                <div class="stats-section">
+
+                    <div class="stat-box">
+                        <h3>06</h3>
+                        <p>Projects Completed</p>
+                    </div>
+
+                    <div class="stat-box">
+                        <h3>6+</h3>
+                        <p>Happy Clients</p>
+                    </div>
+
+                    <div class="stat-box">
+                        <h3>50</h3>
+                        <p>Cups of Coffee</p>
+                    </div>
+
+                </div>
+
+                <button class="resume-btn" (click)="downloadResume()">
+                    Download Resume ↗
+                </button>
+
+            </div>
+
+        </div>
+
+        <div class="section-label">
+            List of projects
+        </div>
+
+    </section>
+
+    <!-- RECENT PROJECTS -->
+    <section class="projects-section">
+
+        <h2 class="section-title">Recent Projects</h2>
+
+        <div class="projects-grid">
+
+            <!-- CARD -->
+            <!-- <div class="project-card" *ngFor="let item of projects" [href]="item.domain" target="_blank" class="project-link">
+
+                <img [src]="item.image" alt="project">
+
+                <div class="project-content">
+                    <h3>{{item.title}}</h3>
+
+                    <span>Web Application</span>
+
+                    <p>
+                        {{item.content}}
+                    </p>
+                  
+                </div>
+
+            </div> -->
+
+            <a class="project-card project-link" *ngFor="let item of projects" [href]="item.domain" target="_blank">
+
+                <img [src]="item.image" alt="project">
+
+                <div class="project-content">
+
+                    <h3>{{item.title}}</h3>
+
+                    <span>Web Application</span>
+
+                    <p>
+                        {{item.content}}
+                    </p>
+
+                </div>
+
+            </a>
+        </div>
+
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="experience-section">
+
+        <h2 class="section-title">Work Experience</h2>
+
+        <div class="experience-list">
+
+            <div class="experience-card" *ngFor="let exp of experiences">
+
+                <img [src]="exp.image" alt="">
+
+                <div class="experience-content">
+
+                    <div class="exp-top">
+                        <h3>{{exp.role}}</h3>
+                        <span>{{exp.company}}</span>
+                    </div>
+
+                    <p>
+                        {{exp.content}}
+                    </p>
+
+                    <button>{{exp.date}}</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact-section">
+
+        <h1>LET’S TALK</h1>
+
+        <h2>santhoshmvp333@gmail.com</h2>
+
+        <div class="contact-bottom">
+
+            <a href="https://github.com/santhoshkumarkrs" target="_blank" class="bottom-item">
+                <img src="../../assets/github.png" />
+                <span>Github</span>
+            </a>
+
+            <a href="https://www.linkedin.com/in/santhosh-kumar-k-28468322a" target="_blank" class="bottom-item">
+                <img src="../../assets/linkedin.png" />
+                <span>LinkedIn</span>
+            </a>
+
+            <a href="mailto:santhoshmvp333@gmail.com" class="bottom-item">
+                <img src="../../assets/envelope.png" />
+                <span>Gmail</span>
+            </a>
+
+        </div>
+
+    </section>
+
+</div>
